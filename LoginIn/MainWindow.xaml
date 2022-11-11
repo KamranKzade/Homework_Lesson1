@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow"
         Height="600" 
-        Width="800"
+        Width="400"
         WindowStyle="None" 
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -15,29 +15,31 @@
         Background="Transparent"
         AllowsTransparency="True">
 
-    <Border CornerRadius="12">
-
+    <Border CornerRadius="20">
+        
         <Border.Background>
             <ImageBrush 
-                ImageSource="/backEnd.png"
-                Stretch="UniformToFill" />
+                ImageSource="/Logo.png"
+                Stretch="Fill"
+                />
         </Border.Background>
 
-        <Border CornerRadius="10" 
+        <Border CornerRadius="18" 
             Opacity="0.8"
             BorderThickness="1">
             <Border.BorderBrush>
                 <LinearGradientBrush>
-                    <GradientStop Color="#462Ad8" Offset="0"/>
-                    <GradientStop Color="#da34ae" Offset="0.75"/>
-                    <GradientStop Color="#8a16c1" Offset="1"/>
+                    <GradientStop Color="DeepSkyBlue" Offset="0"/>
+                    <GradientStop Color="Yellow" Offset="0.5"/>
+                    <GradientStop Color="Blue" Offset="1"/>
+                    
                 </LinearGradientBrush>
             </Border.BorderBrush>
 
             <Border.Background>
-                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <LinearGradientBrush >
                     <GradientStop Color="#060531" Offset="0"/>
-                    <GradientStop Color="#1814" Offset="0.75"/>
+                    <GradientStop Color="#1814" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
 
@@ -143,12 +145,12 @@
                     </Button>
                 </Grid>
 
-                <StackPanel Width="250" Grid.Row="2" Orientation="Vertical" Margin="0 35 0 0">
-                    <Image  Width="100" Height="100" Source="C:\Users\Kamran\source\repos\Homework_Lesson1\LoginIn\Images\Logo.Png"/>
+                <StackPanel Width="300" Grid.Row="2" Orientation="Vertical" Margin="0 35 0 0">
+                    <Image  Width="100" Height="100" Source="/SignIn.png"/>
 
                     <TextBlock 
                         Text="Sign In"
-                        Foreground="WhiteSmoke"
+                        Foreground="White"
                         FontSize="25"
                         FontWeight="Medium"
                         FontFamily="MontSerrat"
@@ -157,7 +159,7 @@
 
                     <TextBlock 
                         Text="Username"
-                        Foreground="WhiteSmoke"
+                        Foreground="White"
                         FontSize="25"
                         FontWeight="Medium"
                         FontFamily="Montserrat"
@@ -168,21 +170,24 @@
                         FontSize="24"
                         FontWeight="Medium"
                         FontFamily="Montserrat"
-                        Foreground="WhiteSmoke"
+                        Foreground="DarkOrange"
                         BorderBrush="DarkGray"
                         BorderThickness=" 0 0 0 1"
                         Height="28"
                         Margin="0 5 0 0"
                         Padding="35 0 0 0">
                         <TextBox.Background>
-                            <ImageBrush ImageSource="/User.png" Stretch="Uniform" AlignmentX="Left"></ImageBrush>
+                            <ImageBrush 
+                                ImageSource="/User.png" 
+                                Stretch="Uniform" 
+                                AlignmentX="Left"/>
                         </TextBox.Background>
                     </TextBox>
 
 
                     <TextBlock 
                         Text="Password"
-                        Foreground="WhiteSmoke"
+                        Foreground="White"
                         FontSize="25"
                         FontWeight="Medium"
                         FontFamily="Montserrat"
@@ -193,23 +198,26 @@
                         FontSize="24"
                         FontWeight="Medium"
                         FontFamily="Montserrat"
-                        Foreground="WhiteSmoke"
+                        Foreground="DarkOrange"
                         BorderBrush="DarkGray"
                         BorderThickness=" 0 0 0 1"
                         Height="28"
                         Margin="0 5 0 0"
                         Padding="35 0 0 0">
                         <PasswordBox.Background>
-                            <ImageBrush ImageSource="/key.png" Stretch="Uniform" AlignmentX="Left"></ImageBrush>
+                            <ImageBrush ImageSource="/key.png"
+                                        Stretch="Uniform" 
+                                        AlignmentX="Left"/>
                         </PasswordBox.Background>
                     </PasswordBox>
 
                     <TextBlock 
                         Margin="10"
-                        Width="230"
-                        Height="40"
-                        FontSize="16"
-                        Foreground="OrangeRed"
+                        Width="275"
+                        Height="35"
+                        FontSize="24"
+                        Foreground="Red"
+                        Background="Transparent"
                         Text=""
                         Name="textblock">
                         

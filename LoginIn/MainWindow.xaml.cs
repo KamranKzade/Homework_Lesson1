@@ -1,6 +1,7 @@
 ﻿using LogIn_Master.Models;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace LogIn_Master;
 
@@ -25,24 +26,33 @@ public partial class MainWindow : Window
 
     private void Login_Click(object sender, RoutedEventArgs e)
     {
-        if (student.Username == Username.Text)
+        if (Username.Text.Length < 3)
         {
-            textblock.Text = string.Empty;
-            if (student.Password == Password.Password)
-            {
-                MessageBox.Show($"Welcome {student.Username}", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
-                textblock.Text = string.Empty;
-            }
-            else
-            {
-                textblock.Text = "Your Password is Wrong";
-                textblock.Visibility = Visibility.Visible;
-            }
+            textblock.Text = "Username's lenght is wrong";
+            textblock.Foreground = new SolidColorBrush(Colors.Yellow);
+            textblock.FontSize = 18;
+        }
+        else if (Password.Password.Length < 3)
+        {
+            textblock.Text = "Password's lenght is wrong";
+            textblock.Foreground = new SolidColorBrush(Colors.Yellow);
+            textblock.FontSize = 18;
         }
         else
         {
-            textblock.Text = "Your Username is Wrong";
-            textblock.Visibility = Visibility.Visible;
+            if (student.Username == Username.Text)
+            {
+                textblock.Text = string.Empty;
+                if (student.Password == Password.Password)
+                {
+                    MessageBox.Show($"Welcome {student.Username}", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                    textblock.Text = string.Empty;
+                }
+                else
+                    textblock.Text = "Your Password is Wrong";
+            }
+            else
+                textblock.Text = "Your Username is Wrong";
         }
     }
 }

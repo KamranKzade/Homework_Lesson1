@@ -8,19 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="backEnd.png" />
     <None Remove="key.png" />
     <None Remove="Logo.Png" />
+    <None Remove="SignIn.png" />
     <None Remove="User.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="backEnd.png" />
-    <Resource Include="Images\Logo.Png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="key.png" />
-    <Resource Include="Logo.Png" />
+    <Resource Include="Logo.png" />
+    <Resource Include="SignIn.png" />
     <Resource Include="User.png" />
   </ItemGroup>
 
