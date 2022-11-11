@@ -1,0 +1,104 @@
+﻿<Window x:Class="Homework_Lesson1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework_Lesson1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <StackPanel Name="MyStackPanel" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+        <StackPanel Margin="30" Orientation="Horizontal" HorizontalAlignment="Center" >
+
+            <Button Content="1"
+                    HorizontalContentAlignment="Center"
+                    FontSize="76"
+                    FontWeight="Bold"
+                    FontFamily="Comic Sans MS"
+                    BorderBrush="Black"
+                    BorderThickness="4"
+                    Margin="10"
+                    Width="200"
+                    Height="150"
+                    Background="Orange"
+                    PreviewMouseDown="Click"
+                    ></Button>
+
+            <Button Content="2"
+                    HorizontalContentAlignment="Center"
+                    FontSize="76"
+                    FontWeight="Bold"
+                    FontFamily="Comic Sans MS"
+                    BorderBrush="Black"
+                    BorderThickness="4"
+                    Margin="10"
+                    Width="200"
+                    Height="150"
+                    Background="Pink"
+                    PreviewMouseDown="Click"
+                    ></Button>
+            <Button Content="3"
+                    HorizontalContentAlignment="Center"
+                    FontSize="76"
+                    FontWeight="Bold"
+                    FontFamily="Comic Sans MS"
+                    BorderBrush="Black"
+                    BorderThickness="4"
+                    Margin="10"
+                    Width="200"
+                    Height="150"
+                    Background="DeepSkyBlue"
+                    PreviewMouseDown="Click"
+                    ></Button>
+        </StackPanel>
+
+
+        <StackPanel Margin="30 10 30 30" HorizontalAlignment="Center" Orientation="Horizontal">
+
+            <Button Content="4"
+                    HorizontalContentAlignment="Center"
+                    FontSize="76"
+                    FontWeight="Bold"
+                    FontFamily="Comic Sans MS"
+                    BorderBrush="Black"
+                    BorderThickness="4"
+                    Margin="10"
+                    Width="200"
+                    Height="150"
+                    Background="Red"
+                    PreviewMouseDown="Click"
+            ></Button>
+
+            <Button Content="5"
+                    HorizontalContentAlignment="Center"
+                    FontSize="76"
+                    FontWeight="Bold"
+                    FontFamily="Comic Sans MS"
+                    BorderBrush="Black"
+                    BorderThickness="4"
+                    Margin="10"
+                    Width="200"
+                    Height="150"
+                    Background="DeepPink"
+                    PreviewMouseDown="Click"
+                    ></Button>
+
+            <Button 
+                Content="6"
+                HorizontalContentAlignment="Center"
+                FontSize="76"
+                FontWeight="Bold"
+                FontFamily="Comic Sans MS"
+                BorderBrush="Black"
+                BorderThickness="4"
+                Margin="10"
+                Width="200"
+                Height="150"
+                Background="Gray"
+                PreviewMouseDown="Click"
+                ></Button>
+
+        </StackPanel>
+
+    </StackPanel>
+</Window>
