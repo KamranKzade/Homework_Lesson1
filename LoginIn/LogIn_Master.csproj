@@ -9,12 +9,19 @@
 
   <ItemGroup>
     <None Remove="backEnd.png" />
+    <None Remove="key.png" />
     <None Remove="Logo.Png" />
+    <None Remove="User.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="backEnd.png" />
-    <Resource Include="Images\Logo.Png" />
+    <Resource Include="Images\Logo.Png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="key.png" />
+    <Resource Include="Logo.Png" />
+    <Resource Include="User.png" />
   </ItemGroup>
 
 </Project>
